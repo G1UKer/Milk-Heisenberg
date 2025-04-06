@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #101e17;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 1rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h3 {
+  color: #a9ffae;
+  border-bottom: 1px solid #2c4b3d;
+  padding-bottom: 0.3rem;
+  margin-top: 1.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="number"],
+select {
+  background-color: #1a2f26;
+  color: #f0fff0;
+  border: 1px solid #3a5f4a;
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #7bffa7;
 }
 
-.card {
-  padding: 2em;
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 
-.read-the-docs {
-  color: #888;
+.column {
+  background-color: #162821;
+  border: 1px solid #2a4437;
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 0.5rem;
+  box-shadow: 0 0 8px #0f2d24;
+}
+
+.computed-block {
+  background-color: #0f211a;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #1e4134;
+  box-shadow: 0 0 10px #13ff8f88;
+  color: #d4ffe2;
+}
+
+.computed-block p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+  text-shadow: 0 0 3px #afffc4;
+}
+
+select, input[type="number"] {
+  box-shadow: 0 0 5px #1dbf70 inset;
+}
+
+::selection {
+  background: #1dbf70;
+  color: black;
 }
